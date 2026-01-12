@@ -1,0 +1,370 @@
+
+
+/* header styles */
+.header {
+  background-color: #ffffff;
+}
+/* navbar styles */
+
+.navbar_container {
+  max-width: 1397px; /* Set a maximum width for the navbar 1395px + padding 20px on both sides */
+  margin: 0 auto; /* Center the navbar */ 
+  background-color: rgb(255, 255, 255);
+  white-space: nowrap; /* Prevent line breaks in navbar items */
+}
+.navbar{
+  padding: 20px;
+  border: 1px solid #000000; 
+}
+
+.navlist {
+  display: flex;
+  justify-content: space-between;
+  gap: 50px; /* Even 93px interval between items */
+}
+
+.navlist a, .navlist h3, .navlist button {
+  font-family: 'Roboto', sans-serif;
+  padding: 0; /* Remove default padding, spacing is handled by gap */
+}
+
+.nav_button{
+  width: 157px;
+  height: 52px;
+  margin-top: 10px;
+  background-color: #FB4B4D; /* Set the background color of the button */
+  color: #ffffff;
+  text-align: center;
+}
+
+
+
+/* main styles */
+/* hero section */
+.hero{
+  display: flex; /* Use flexbox for layout */
+  max-width: 1397px; /* Set a maximum width for the hero section */
+  margin: 0 auto; /* Center the hero section */
+}
+
+.hero_left{
+  width: 50%;
+}
+
+.logo_letters_wrapper{
+  border-bottom: 1px solid #000000; 
+}
+
+.logo_letters_wrapper img{
+  padding: 20px;
+  border-left:1px solid #000000; /* Add a left border to the logo image */
+  border-right:1px solid #000000; /* Add a right border to the logo image */
+}
+
+.heroimg1_wrapper{
+ border: 1px solid #000000;
+}
+
+.heroimg1_wrapper img{
+  padding: 21px;
+}
+
+.hero_right{
+width: 50%; /* Set the width of the right section to 50% */
+border-right: 1px solid #000000;
+border-bottom: 1px solid #000000;
+}
+
+.hero_right h1{
+  padding: 20px 100px; /* Add padding to the title to make it 3 rows*/
+}
+
+.hero_title{
+  border-bottom: 1px solid #000000;/* Add a bottom border to the title */
+  font-weight: 400;
+  font-size: 58px;
+  line-height: 65px;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: 'Roboto', sans-serif; 
+  color: #000000;
+}
+
+.heroimg_wrapper{
+  padding: 20px;
+}
+
+/* ticker styles */
+.ticker_text{
+font-family: 'Roboto', sans-serif; /* Use Roboto font */
+ display: flex;
+ flex-shrink: 0;
+ text-transform: uppercase;
+ white-space: nowrap;
+ align-items: center;
+}
+
+.ticker{
+  height:var(--height);
+  width: var(--width);
+  padding: 23px 0;
+  overflow: hidden; /* Hide overflowing content */
+  position: relative; 
+  border-left: 1px solid #000000; /* Add a left border to the ticker */
+  border-right: 1px solid #000000; /* Add a right border to the ticker */
+}
+
+
+.ticker .ticker_wrapper {
+  display: flex; 
+  width: 100%;
+  position: relative;
+}
+
+
+.ticker .ticker_wrapper .ticker__item{
+ left: 100%;
+ animation: 5s ticker linear infinite;
+}
+
+.ticker__item img{
+   margin: 0 15px; /* Add padding to the left and right of each ticker item */
+}
+
+ @keyframes ticker {
+  from {
+    transform: translateX(0%);
+  }
+
+  to {
+    transform:translateX(-100%);
+  }
+} 
+
+/* product showcase section */
+
+.product{
+  
+  max-width: 1397px; /* Set a maximum width for the product section */
+  margin: 0 auto; /* Center the product section */
+}
+
+ .slogan_wrapper{
+  display: flex;
+  width: 100%;
+  border: 1px solid #000000; 
+  border-top: none; /* Remove the top border */
+  padding: 50px 20px 50px 20px;
+  justify-content: space-between; /* Space out the image and text */
+} 
+
+.product_wrapper{
+  padding:20px;
+  border: 1px solid #000000; /* Add a border to the product wrapper */
+  border-top: none; /* Remove the top border */
+}
+
+
+.product_text{
+  padding-top: 2%;
+  text-align: center;
+  font-weight: 400;
+  font-size: 73px;
+  line-height: 65px;
+  color: #000000;
+  font-family: 'Roboto', sans-serif; /* Use Roboto font */
+} 
+
+.decor_wrapper{
+  height: 0px;
+  display: flex; /* Use flexbox for layout */
+  justify-content: space-between; /* Space out the images */
+}
+
+.decor{
+  margin: 20px 20px 0 20px; /* Add padding to the images */
+}
+
+.item_list{
+  display: flex; /* Use flexbox for layout */
+  justify-content: space-between; /* Space out the frames and images */
+}
+
+.frame{
+  background-image: url('/IMG/FRAME_image.png');
+  background-repeat: no-repeat; /* Center the background image at the bottom */
+  padding:130px 23px 23px 23px; /* Add padding to the frame */
+}
+
+.taste{
+  margin: 0 0 13px 0;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 28px;
+  color: #000000;
+  text-align: center; /* Center the text */
+  font-family: 'Roboto', sans-serif; /* Use Roboto font */
+  text-transform: uppercase;
+}
+.frametext{
+  font-family: 'Roboto', sans-serif; /* Use Roboto font */
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 38px;
+  color: #000000;
+  text-align: center; /* Center the text */
+  margin: 0 0 13px 0;
+}
+
+.product_image_wrapper{
+  padding: 20px;
+  border: 1px solid #000000; /* Add a border to the product image wrapper */
+}
+
+/* about section */
+.about{
+  max-width: 1397px; /* Set a maximum width for the about section */
+  margin: 0 auto; /* Center the about section */
+}
+
+.about_wrapper{
+  display: flex; /* Use flexbox for layout */
+}
+.about_left{
+  width: 50%;
+  border: 1px solid #000000; /* Add a border to the left section */
+  border-top: none;
+}
+
+.about_left h1{
+  padding: 53px 54px 44px 54px;
+
+}
+
+.about_text{
+  font-family: 'Roboto', sans-serif; /* Use Roboto font */
+  font-weight: 400;
+  font-weight: 400;
+  font-size: 58px;
+  line-height: 65px;
+  text-align: center;
+  color: #000000;
+}
+
+
+.author_text{
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+  color: #000000;
+  padding-top: 22px;
+  font-family: 'Roboto', sans-serif; /* Use Roboto font */
+}
+
+.about_right{
+  background-image: url(/IMG/BG_STORY.svg);
+  background-repeat: no-repeat;
+  position: relative;
+  border-right: black solid 1px; /* Add a left border to the right section */
+  border-bottom: black solid 1px;
+}
+
+
+.about_right img {
+  position: absolute;
+}
+
+.decor_item,
+.decor_item3 {
+  left: 67px;
+}
+
+.decor_item2,
+.decor_item4 {
+  left: 515px;
+}
+
+.decor_item,
+.decor_item2 {
+  top: 26px;
+}
+
+.decor_item3,
+.decor_item4 {
+  bottom: 26px;
+}
+
+.text_container_wrapper {
+ display: flex; /* Use flexbox for layout */
+  flex-direction: column; /* Stack the text containers vertically */
+  align-items: center; /* Center the text containers horizontally */
+  padding-top: 105px; /* Add padding to the text container wrapper */
+}
+
+.text_container1,
+.text_container2,
+.text_container3,
+.text_container4 {
+  padding: 0 150px 0 150px; /* Add padding to the text container */
+} 
+
+
+
+/* footer styles */
+
+.footer{
+  max-width: 1397px; /* Set a maximum width for the product section */
+  margin: 0 auto; /* Center the product section */
+  border-right: #000000 solid 1px;
+  border-left: #000000 solid 1px; 
+  border-top: #000000 solid 1px; /* Add a bottom border to the footer */
+}
+
+
+.foocontent{
+  position: relative;
+}
+
+
+.fire_bg {
+  position: absolute;
+  width: 1394px;
+  top: -50px;
+
+
+}
+
+.big_letters {
+  position: absolute;
+  top:107px;
+  left: 268px;
+  bottom: 107px;
+}
+
+.fancy_frame {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+.footer_socials{
+  border-bottom: #000000 solid 1px;
+  border-top: #000000 solid 1px; /* Add a border to the footer socials */
+  margin-top: 27px;
+  display: flex; /* Use flexbox for layout */
+  justify-content: space-between; /* Space out the items */
+  background-color: #CDFD3B; /* Set the background color of the footer socials */
+  padding: 20px 93px 21px 93px; /* Add padding to the footer socials */
+}
+
+.socials_text {
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 24px;
+  text-align: center;
+  color: #000000;
+  text-transform: uppercase;
+  font-family: 'Roboto', sans-serif; /* Use Roboto font */
+}
